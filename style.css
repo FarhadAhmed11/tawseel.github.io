@@ -1,0 +1,460 @@
+/* ................GENERAL.............. */
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-family: "lato", cursive;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 180%;
+    font-weight: 500;
+    text-align: center;
+}
+
+section h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #25a25a;
+    content: "" ;
+    margin: 15px auto;
+}
+
+body {
+    font-family: 'lato', cursive; 
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+/* ................HEADER.............. */
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.534)), url(food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    width: 40%;
+    position: absolute;
+    top: 44%;
+    left: 8%;
+}
+
+.hero-text-box h1 {
+    margin: 0;
+    color: white;
+    font-size: 200%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 120%;
+}
+
+.btn:link,
+.btn:visited {
+    margin: 20px 10px 0 0;
+    display: inline-block;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 110%;
+    font-family:'lato', cursive;
+    font-weight: 500;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #2ECC71;
+    border: 1px solid #2ECC71;
+    color: white;
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #2ECC71;
+    color: #2ECC71;
+}
+
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #25a25a;
+    border: 1px solid #25a25a;
+}
+
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #25a25a;
+    color: #fff;
+    background-color: #25a25a;
+}
+
+.logo {
+    display: block;
+    height: 80px;
+    float: left;
+    margin: 20px 0 0 0;
+    border: 1px solid #25a25a;
+    border-radius: 15px;
+}
+
+#logo {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 200%;
+    display: block;
+    float: left;
+    margin: 30px 0 0 0;
+    border: 1px solid #25a25a;
+    border-radius: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-bar {
+    list-style: none;
+    float: right;
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-bar li a:link,
+.nav-bar li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: 500;
+    padding-bottom: 8px;
+    transition: border-bottom 0.2s;
+    letter-spacing: 1px;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:active {
+    border-bottom: 2px solid #25a25a;
+
+}
+
+/* ................FUTURES.............. */
+
+.section-futures i {
+    color: #25a25a;
+    font-size: 180%;
+}
+
+.section-futures h3 {
+    text-transform: uppercase;
+    margin: 10px 0 8px 0;
+    font-size: 180%;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.section-futures p {
+    font-family: 'lato', cursive;
+    font-size: 115%;
+
+}
+
+.futures-border {
+    height: 145px;
+}
+
+.futures-border:not(:last-child) {
+    border-right: 1px solid #ccc;
+    padding: 0 15px 0 0;
+}
+
+/* ................THE GALLERY.............. */
+
+.section-food {
+    padding: 0;
+}
+
+
+.gallery {
+    width: 100%;
+    list-style: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.gallery-photo {
+    width: 100%;
+    margin: 0;
+    overflow:hidden;
+}
+
+.gallery-photo img {
+    width: 100%;
+    transform: scale(1.25);
+    transition: transform 1s;
+}
+
+.gallery-photo img:hover {
+    transform: scale(1.05);
+}
+
+/* ................SECTION STEPS.............. */
+
+.section-step {
+    background-color: #ddd;
+}
+
+.step-box {
+    margin: 0;
+}
+
+.step-box:first-child {
+    text-align: right;
+}
+
+
+.phone-img {
+    width: 60%;
+}
+
+.work-step {
+    margin: 5% auto;
+}
+
+.work-step div {
+    color: #25a25a;
+    border: 2px solid #25a25a;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    float: left;
+    font-size: 150%;
+    font-weight: 500;
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+.work-step p {
+    font-family:'lato', cursive;
+    margin: 0;
+    width: 65%;
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.btn-app img {
+    height: 50px;
+    margin: 10px 10px 0 0;
+}
+
+/* ................OUR PARTNERS.............. */
+
+.section-partners {
+    background-color: #fff;
+    
+}
+
+.partners {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.partners li {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.partners li img {
+    height: 90px;
+    width: auto; 
+}
+
+.partners li img.youtube,
+.partners li img.jarir {
+    height: 62px;
+    margin-top: 10px;
+}
+
+/* ................SATISFIED CUSTOMERS.............. */
+
+.section-customers {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.699)) ,url(hmm.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 40px 0;
+}
+
+.section-customers h2:after {
+    margin-bottom: 3%;
+}
+
+.customers-box {
+    border: 1px solid rgba(221, 221, 221, 0.171);
+    height: 200px;
+    
+}
+
+blockquote {
+    font-family:'lato', cursive;
+    font-style : italic;
+    font-weight: 300;
+    word-spacing: 1px;
+    border: 0;
+    padding: 4%;
+    margin: 0;
+}
+
+cite {
+    font-family:'lato', cursive;
+    text-transform: uppercase;
+    font-size: 80%;
+    margin-top: 10px;
+    display: block;
+}
+
+cite img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+#shakher {
+    margin-top: 35px; 
+}
+
+/* ................SECTION CONTACT.............. */
+
+.contact-form {
+    width: 50%;
+    margin: 18px auto 0 auto;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+[placeholder] {
+    text-transform: uppercase;
+}
+
+input[type="email"],
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #25a25a;
+    height: 40px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 13px;
+    background-color: #2ECC71;
+    border: 1px solid #2ECC71;
+    border-radius: 50px;
+    color: white;
+    font-size: 130%;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    background-color: #25a25a;
+    border: 1px solid #25a25a;
+}
+
+/* ................SECTION FOOTER.............. */
+
+footer {
+    background-color: rgb(58, 58, 58);
+    color: #ccc;
+    overflow: hidden;
+}
+
+.footer-box {
+    text-align: center;
+}
+
+.social-links,
+.footer-nav {
+    padding: 0;
+}
+
+#contact-num {
+    color: rgb(209, 53, 162);
+}
+
+.social-links {
+    margin: 18px 0 0 0;
+
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links li a i {
+    font-size: 160%;
+    padding: 0 5px;
+}
+
+.footer-copy p {
+    text-align: center;
+}
+
+.footer-nav li a:hover {
+    color: #25a25a;
+}
+
+.fa-twitter:hover {color: #00aced;}
+.fa-facebook:hover {color: #3b5998;}
+.fa-whatsapp:hover {color: #25D366;}
+.fa-instagram:hover {color: #fbad50;}
